@@ -42,7 +42,7 @@ public class ExcelRead {
 									sb2.append("'"+cell.getCellFormula()+"',");
 									break;
 								case NUMERIC:
-									cell.setCellType(Cell.CELL_TYPE_STRING); // 정수로 변환 
+									cell.setCellType(Cell.CELL_TYPE_STRING); // �젙�닔濡� 蹂��솚 
 									sb2.append("'"+cell.getStringCellValue()+ ""+"',");
 									break;
 								case STRING:
@@ -57,7 +57,7 @@ public class ExcelRead {
 							}
 						}
 					}
-					// INSERT INTO sn_gzt_mem_kipo VALUES('KIPO20210001', '길승세', 'rlftmdtp@kipi.or.kr', '119981042713', '20210217', '20210226', '1');
+					// INSERT INTO sn_gzt_mem_kipo VALUES('KIPO20210001', '湲몄듅�꽭', 'rlftmdtp@kipi.or.kr', '119981042713', '20210217', '20210226', '1');
 				}
 
 				StringBuffer lastDeleteSB = sb2.deleteCharAt(sb2.length()-1);
@@ -65,11 +65,6 @@ public class ExcelRead {
 				System.out.println(sb.toString());
 			}
 		}
-		
-	}
-
-	private static void swtich() {
-		// TODO Auto-generated method stub
 		
 	}
 
